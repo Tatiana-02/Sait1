@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Main.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com" />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700"
+    />
+
+    <link rel="stylesheet" href="calculate.css" />
+    <script src="/menu.js"></script>
+      
+    <script LANGUAGE="JavaScript">
+      function primer() { 
+        form_1.t1.value=1000000
+        form_1.t2.value=10000
+        form_1.t4.value=10000
+        form_1.t5.value=10000
+      }
+        
+      function poteri() {
+        with (Math){
+        zp = form_1.t1.value.replace(',','.')*1
+        r1 = form_1.t2.value.replace(',','.')*1
+        r3 = form_1.t4.value.replace(',','.')*1
+        r4 = form_1.t5.value.replace(',','.')*1
+        
+        z = zp*0.13
+        r = (r1+r3+r4)*0.13
+        f = z*1 - r*1
+        
+        if (f < 0) {z1 = z}
+        
+        f = z*1 - r*1
+        
+        if (f = 0) {z1 = z}
+        
+        f = z*1 - r*1
+        
+        if (f > 0) {z1 = r}
+        
+        mstr1=z1.toFixed(2)
+        form_1.t6.value = mstr1
+        }
+        }
+        
+          
+          </script>
+          <script>window.yaContextCb=window.yaContextCb||[]</script>
+          <script src="https://yandex.ru/ads/system/context.js" async></script>
+             <div id="centerLayer">
+          
+                      <form name="form_1">
+                  <div class="calculator-input-wrap">
+                      <h4 width="50%">Доход за год</h4>
+                      <input
+                        class="calculator-input"
+                        type="text"
+                        name="t1"
+                        size="18"
+                        placeholder="Введите доход"
+                      />
+                    </div>
+                  <div class="calculator-input-wrap">
+                      <h4 width="50%">Расходы на свое обучение за месяц</h4>
+                      <input
+                        class="calculator-input"
+                        type="text"
+                        name="t2"
+                        size="18"
+                        placeholder="Введите расходы"
+                      />
+                  </div>
+                  <div class="calculator-input-wrap">
+                      <h4 width="50%">Расходы на обучение первого ребёнка за месяц</h4>
+                      <input
+                        class="calculator-input"
+                        type="text"
+                        name="t4"
+                        size="18"
+                        placeholder="Введите расходы"
+                      />
+                  </div>
+                  <div class="calculator-input-wrap">
+                      <h4 width="50%">Расходы на обучение второго ребёнка за месяц</h4>
+                      <input
+                        class="calculator-input"
+                        type="text"
+                        name="t5"
+                        size="18"
+                        placeholder="Введите расходы"
+                      />
+                  </div>
+                <div width="50%"><input type="button" value="Пример" name="B1" onclick= "primer()"></div>
+                <div width="50%"><input type="button" value="Рассчитать" name="B2" onclick="poteri()"></div>
+                <div  width="50%"><h5>Сумма налога, руб</h5></div >
+                <div  width="50%"><input type="text" name="t6" size="18"></div>
+          </form>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-69427223-3');
+          </script>  
+                  </div>   
+              </div>  

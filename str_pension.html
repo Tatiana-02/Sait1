@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Main.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com" />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700"
+    />
+
+    <link rel="stylesheet" href="calculate.css" />
+    <script src="/menu.js"></script>
+		<div class="calc-form col-12">
+			<div class="rowww align-items-center py-4">
+				<h4 class="calculator-input-title">Выберите пол:</h4>
+				<div class="col-12 col-md-4">
+					<div class="d-flex align-items-center"> <select class="custom-select px-2" name="gender" id="gender">
+						<option value="0">Мужской</option>
+						<option value="1">Женский</option></select> </p>
+					</div>
+				</div>
+			</div>
+			<div class="rowww align-items-center border-top py-4">
+				<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title">Год рождения:</h4>
+					<div class="col-12 col-md-4">
+						<div class="d-flex align-items-center"> <input class="form-control px-2" name="birthDate" id="birthDate" type="text"/> </div>
+					</div>
+				</div>
+				<div class="rowww align-items-baseline border-top py-4">
+					<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="yearsInArmy"> Сколько лет Вы планируете проходить военную службу?</for></h4>
+						<div class="col-12 col-md-4 align-self-start">
+							<div class="d-flex align-items-baseline">
+								<div class="text-center"> <input value="0" class="form-control text-center px-2" name="yearsInArmy" id="yearsInArmy" type="text" aria-label="лет"/> <small class="form-text">лет</small> </div>
+								<div class="text-center mx-2"> <input value="0" class="form-control text-center px-2" name="monthInArmy" id="monthInArmy" type="text" aria-label="месяцев"/> <small class="form-text">мес.</small> </div>
+								<div class="text-center"> <input value="0" class="form-control text-center px-2" name="daysInArmy" id="daysInArmy" type="text" aria-label="дней"/> <small class="form-text">дней</small> </div>
+							</div>
+						</div>
+					</div>
+					<p><input type="hidden" name="pensionTarif" value="0"/> </p>
+					<div class="rowww align-items-center border-top py-4">
+						<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="childrenCount1"> Сколько детей Вы планируете иметь? <br /> (с учётом уже имеющихся)</h4></div>
+							<div class="col-12 col-md-3 col-lg-2"> <input value="0" class="form-control px-2" name="childrenCount1" id="childrenCount1" type="text"/> </div>
+						</div>
+						<div class="rowww align-items-center border-top py-4">
+							<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="childrenVac1">Сколько лет Вы планируете осуществлять уход за каждым из детей?</for></h4></div>
+							<div class="col-12 col-md-3 col-lg-2">
+								<div class="d-flex align-items-center"> <input value="0" class="form-control px-2" name="childrenVac1" id="childrenVac1" type="text"/> </p>
+								</div>
+							</div>
+						</div>
+						<div class="rowww align-items-baseline border-top py-4">
+							<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title"> Сколько лет Вы предполагаете ухаживать за нетрудоспособными гражданами?</h4> </div>
+							<div class="col-12 col-md-4 align-self-start">
+								<div class="d-flex align-items-baseline">
+									<div class="text-center"> <input value="0" class="form-control text-center px-2" name="careYears" id="careYears" type="text" aria-label="лет"/> <small class="form-text">лет</small> </div>
+									<div class="text-center mx-2"> <input value="0" class="form-control text-center px-2" name="careMonth" id="careMonth" type="text" aria-label="месяцев"/> <small class="form-text">мес.</small> </div>
+									<div class="text-center"> <input value="0" class="form-control text-center px-2" name="careDays" id="careDays" type="text" aria-label="дней"/> <small class="form-text">дней</small> </div>
+								</div>
+							</div>
+						</div>
+						<div class="rowww align-items-center border-top py-4">
+							<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="retireWorkWithoutPension"> Сколько лет после возникновения права на страховую пенсию Вы готовы не обращаться за её назначением?</h4> </div>
+							<div class="col-12 col-md-3 col-lg-2">
+								<div class="d-flex align-items-center"> <select class="custom-select px-2" name="retireWorkWithoutPension" id="retireWorkWithoutPension"><option selected="selected" value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select> </p>
+								</div>
+							</div>
+						</div>
+						<div class="rowww align-items-top border-top py-4">
+							<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="careerPlan">Вы планируете работать</h4> </div>
+							<div class="col-12 col-md-6">
+								<div class="form-check"> <input class="form-check-input" type="radio" name="careerPlan" id="careerPlan1" value="1" checked=""/> <h6 class="calculator-input-title"> <for="careerPlan1">Наёмным работником</h6> </div>
+								<div class="form-check"> <input class="form-check-input" type="radio" name="careerPlan" id="careerPlan2" value="2"/> <h6 class="calculator-input-title"> <for="careerPlan2">Самозанятым гражданином</h6> </div>
+								<div class="form-check"> <input class="form-check-input" type="radio" name="careerPlan" id="careerPlan3" value="3"/> <h6 class="calculator-input-title"> <for="careerPlan3">Наёмным работником и самозанятым гражданином</h6> </div>
+							</div>
+						</div>
+						<div class="careerPlanQuestions careerPlan2" style="display: none;">
+							<div class="rowww align-items-center border-top py-4">
+								<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="SZPeriod">Сколько лет Вы планируете осуществлять трудовую деятельность в качестве самозанятого гражданина?</h4> </div>
+								<div class="col-12 col-md-3 col-lg-2"> <input value="0" class="form-control px-2" name="SZPeriod" id="SZPeriod" type="text"/> </div>
+							</div>
+							<div class="rowww align-items-center border-top py-4">
+								<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="revenue"> Введите Ваш годовой доход </h4> </div>
+								<div class="col-12 col-md-3 col-lg-2"> <input value="0" class="form-control px-2" name="revenue" id="revenue" type="text"/> </div>
+							</div>
+						</div>
+						<div class="careerPlanQuestions careerPlan1" style="display: block;">
+							<div class="rowww align-items-center border-top py-4">
+								<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="careerLength"> Ваш предполагаемый стаж работы </h4> </div>
+								<div class="col-12 col-md-3 col-lg-2">
+									<div class="d-flex align-items-center"> <input value="0" class="form-control px-2" name="careerLength" id="careerLength" type="text"/> </p>
+									</div>
+								</div>
+							</div>
+							<div class="rowww align-items-center border-top py-4">
+								<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="fee"> Ваша официальная зарплата </h4> </div>
+								<div class="col-12 col-md-3 col-lg-2">
+									<div class="d-flex align-items-center"> <input value="0" class="form-control px-2" name="fee" id="fee" type="text"/> </p>
+									</div>
+								</div>
+							</div>
+							<div class="careerPlanQuestions careerPlan3" style="display: none;">
+								<div class="rowww align-items-center border-top py-4">
+									<div class="col-12 col-md-6 text-md-right"> <h4 class="calculator-input-title" for="combinePeriod">Сколько лет Вы планируете совмещать деятельность в качестве самозанятого гражданина и наёмного работника?</h4> </div>
+									<div class="col-12 col-md-3 col-lg-2"> <input value="0" class="form-control px-2" name="combinePeriod" id="combinePeriod" type="text"/> </div>
+								</div>
+							</div>
+							<div class="rowww-all"> <button class="btn btn-info performCalc" value="Рассчитать" type="button">Рассчитать</button> </div>
+
+<div class="result-block result-bottom mt-4" style="display: none;">
+<div class="error" id="noTarif" style="display: none;"> <h6>Пожалуйста, выберите Ваш тариф.</h6></div>
+<div class="error" id="enterGenderWarning" style="display: none;"> <h6>Пожалуйста, укажите Ваш пол.</h6></div>
+<div class="error" id="enterBYWarning2" style="display: none;"><h6>По закону, у граждан 1966 года рождения и старше пенсионные накопления не формируются.</h6></div>
+<div class="error" id="enterBYWarning3" style="display: none;"><h6>Введите другое значение Вашего трудового стажа.</h6></div>
+<div class="error" id="enterBYWarning" style="display: none;"><h6>Пожалуйста, укажите год Вашего рождения.</h6></div>
+<div class="error" id="wrongFee" style="display: none;"><h6>Введите зарплату выше, чем минимальный размер оплаты труда в Российской Федерации в 2022&nbsp;году&nbsp;&#8212;&nbsp;12 792&nbsp;рублей.</h6></div>
+<div class="error" id="socialPensionWarning" style="display: none;">
+<h6> В соответствии с введёнными Вами данными Ваш стаж составляет <span class="personOSsmall"></span> <span class="ending"></span>, количество пенсионных коэффициентов – <span class="newCoefSummSmall"></span>. <h6> С 2025 года минимальный общий стаж для получения пенсии по старости – 15 лет. Минимальное количество заработанных коэффициентов для назначения пенсии – 30. Если в ответах на вопросы Вы указали стаж менее 15 лет или же количество набранных коэффициентов не достигает 30, то Вам будет назначена социальная пенсия по старости: женщинам в 65 лет, мужчинам в 70 лет. Социальная пенсия по старости сегодня составляет 5283,84 рублей в месяц. Кроме этого, Вам будет производиться социальная доплата к пенсии до прожиточного уровня пенсионера в регионе Вашего проживания. </h6></p>
+<div class="37022065e5e210d7a05af1212eeb43b6" data-index="4" style="float: none; margin:0px 0 0px 0; text-align:center;">
+<div class="Ads4"></div>
+</div>
+<h6>Если Вы хотите получать более высокую пенсию, пересмотрите свои жизненные планы так, чтобы Ваш стаж составил 15 лет и более и Вы в итоге смогли заработать как минимум 30 пенсионных коэффициентов.</h6>
+<div class="37022065e5e210d7a05af1212eeb43b6" data-index="2" style="float: none; margin:0px 0 0px 0; text-align:center;">
+<div class="Ads2"></div>
+</div>
+</div>
+<div class="error" id="socialPensionWarning2" style="display: none;">
+<h6> В соответствии с введнными Вам данными Ваш стаж составляет <span class="personOSsmall"></span> <span class="ending"></span>, количество пенсионных коэффициентов – <span class="newCoefSummSmall"></span>. Вам не хватает пенсионных коэффициентов или стажа для назначения страховой пенсии по старости. С 2025 года минимальный общий стаж для получения пенсии по старости – 15 лет. Минимальное количество заработанных коэффициентов для назначения пенсии – 30. Если в ответах на вопросы Вы указали стаж менее 15 лет или же количество набранных коэффициентов не достигает 30, то Вам будет назначена социальная пенсия по старости: женщинам в 60 лет, мужчинам в 65 лет. Социальная пенсия по старости сегодня составляет 5034,25 рублей в месяц. Кроме этого, Вам будет производиться социальная доплата к пенсии до прожиточного уровня пенсионера в регионе Вашего проживания. </h6>
+</div>
+<div class="error" id="combinationWarning" style="display: none;">
+<h6> Пожалуйста, проверьте правильность заполнения формы. Количество лет совмещения деятельности в качестве самозанятого гражданина и наёмного работника не может превышать количество лет минимального стажа, указанного в каждом виде деятельности по отдельности. </h6>
+</div>
+<div class="error" id="alreadyPensioneer" style="display: none;"> Извините, калькулятор не предназначен для расчета размера пенсий нынешних пенсионеров, граждан, которым до выхода на пенсию осталось менее 3-5 лет. </div>
+</div>
+<div class="pensionCalcResult result-block result-final mt-4" style="display: none;">
+<h4>Результаты расчета</h4>
+<div class="rowww align-items-center py-4">
+<div class="col-12 col-md-8"> <h6 class="calculator-input-title">Количество индивидуальных пенсионных коэффициентов </h6> </div>
+<div class="col-12 col-md-4"> <h6 class="calculator-input-title"><span class="result-value" id="newCoefSumm"> 0</span> </h6> </div>
+</div>
+<div class="rowww align-items-center border-top py-4">
+<div class="col-12 col-md-8"> <h6 class="calculator-input-title">Размер страховой пенсии, руб</h6> </div>
+<div class="col-12 col-md-4"> <h6 class="calculator-input-title"><span class="result-value" id="pensionIPart">0</span> </h6> </div>
+</div>
+<div class="rowww align-items-center border-top py-4">
+<div class="col-12 col-md-8"> <h6 class="calculator-input-title">Общий стаж, лет</h6> </div>
+<div class="col-12 col-md-4"> <h6 class="calculator-input-title"><span class="result-value" id="personOS">0</span> </h6> </div>
+</div>
+</div>
+<input type="hidden" name="charset" value="UTF-8">
+<input type="hidden" name="default_list_id" value="20043641">
+<input type="hidden" name="overwrite" value="2">
+<input type="hidden" name="is_v5" value="1">
+
+<script>var pseudo_links = document.querySelectorAll(".pseudo-clearfy-link");for (var i=0;i<pseudo_links.length;i++ ) { pseudo_links[i].addEventListener("click", function(e){   window.open( e.target.getAttribute("data-uri") ); }); }</script><noscript><div><img src="https://mc.yandex.ru/watch/13193392" style="position:absolute; left:-9999px;" alt="0" /></div></noscript>
+<script type='text/javascript' id='wp-polls-js-extra'>
+var pollsL10n = {"ajax_url":"https:\/\/www.colady.ru\/wp-admin\/admin-ajax.php","text_wait":"\u0412\u0430\u0448 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0435\u0449\u0435 \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 ...","text_valid":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442.","text_multiple":"\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u043e\u0435 \u0447\u0438\u0441\u043b\u043e \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432:","show_loading":"1","show_fading":"1"};
+</script>
+
+<script type='text/javascript' id='wp-postratings-js-extra'>
+var ratingsL10n = {"plugin_url":"https:\/\/www.colady.ru\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/www.colady.ru\/wp-admin\/admin-ajax.php","text_wait":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043d\u0435 \u0433\u043e\u043b\u043e\u0441\u0443\u0439\u0442\u0435 \u0437\u0430 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u043e\u0434\u043d\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e.","image":"thumbs","image_ext":"gif","max":"2","show_loading":"1","show_fading":"1","custom":"1"};;
+</script>
+
+<script type='text/javascript' id='q2w3_fixed_widget-js-extra'>
+var q2w3_sidebar_options = [{"sidebar":"sidebar","use_sticky_position":false,"margin_top":20,"margin_bottom":20,"stop_elements_selectors":"sidebar_stop","screen_max_width":0,"screen_max_height":0,"widgets":["#custom_html-4"]}];
+</script>
+
+<script defer src="https://www.colady.ru/wp-content/cache/autoptimize/js/autoptimize_5e1a382fdc3098b7116ae5404cf4b518.js"></script>

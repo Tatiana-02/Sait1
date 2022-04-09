@@ -1,0 +1,64 @@
+
+<base href="https://kad-reg.ru/kalkulyator.html"/>
+
+<link rel="stylesheet" href="/templates/mytemplate/css/gorod.css">
+<script src="/templates/mytemplate/libs,_jQueryFormStyler-master,_jquery.formstyler.js+libs,_fancybox,_jquery.fancybox.pack.js+libs,_scrollto,_jquery.scrollTo.min.js+js,_common.js+js,_calc.js.pagespeed.jc.l-ef627iKB.js"></script><script>eval(mod_pagespeed_jrkzPpgaXq);</script>
+<script>eval(mod_pagespeed_Y5blIUrlVZ);</script>
+<script>eval(mod_pagespeed_6UnkGF7HsZ);</script>
+<script>eval(mod_pagespeed_Qn21tl_2le);</script>
+<script>eval(mod_pagespeed_xChshVrkOM);</script>
+
+<style>.line{margin-bottom:30px}</style> 
+<div class="calculator-input-wrap">
+    <h4 class="calculator-input-title">Тип объекта</h4>
+    <div class="input"> 
+     <select id="objecttype" onchange="calc();"> 
+        <option disabled selected value="0">Выберите тип объекта</option>
+        <option value="1">Квартира</option> 
+        <option value="2">Комната</option> 
+        <option value="3">Жилой дом</option> 
+        <option value="4">Гараж/хоз.строение</option> 
+        <option value="5">Машиноместо</option> 
+        <option value="6">Коммерческая недвижимость</option> 
+        <option value="7">Недостроенный жилой дом</option> 
+        <option value="8">Земельный участок</option> 
+        <option value="9">Прочие объекты недвижимости</option> 
+     </select> 
+    </div> 
+    </div> 
+    <div class="calculator-input-wrap">
+        <h4 class="calculator-input-title">Кадастровая стоимость</h4>
+        <div class="input"> 
+     <input type="number" min="0" step="1" placeholder="Введите стоимость" id="kadastrprice" onchange="calc();"/>
+    </div> 
+    </div> 
+    <div class="calculator-input-wrap">
+        <h4 class="calculator-input-title">Льготы (%)</h4>
+    <div class="input"> 
+     <input type="number" placeholder="10" min="0" max="100" step="1" id="lgotaprice" onchange="calc();"/> 
+    </div> 
+    </div> 
+    <div class="calculator-input-wrap">
+        <h4 class="calculator-input-title">Площадь (кв.)</h4>
+    <div class="input"> 
+     <input type="number" placeholder="65" min="0" step="1" id="square" onchange="calc();"/> 
+    </div> 
+    <div class="calculator-input-wrap">
+        <h4 class="calculator-input-title">Налог</h4>
+    <div class="input"> 
+     <strong id="price">0 </strong> <i> руб.</i> 
+    </div> 
+    </div> 
+ 
+         <div class="clr"></div>
+				    
+    </div>
+</div></div>
+</div></div>
+<div style="display:none">
+
+<div style="display:none">
+<div id="online">
+</div></div>
+</div>
+</head>

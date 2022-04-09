@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Main.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com" />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700"
+    />
+
+
+<header id="masthead" class="site-header default-style">
+
+
+<script type="text/javascript">
+
+     function calc() {
+        var rang = document.getElementById("rang"); 
+        var tabel = document.getElementById("tabel"); 
+        var vbd = document.getElementById("vbd"); 
+        var avia = document.getElementById("avia"); 
+        var invalid = document.getElementById("invalid"); 
+        var visluga = document.getElementById("visluga"); 
+        var god = document.getElementById("god"); 
+        var kf = document.getElementById("kf"); 
+        var invalid13 = document.getElementById("invalid13"); 
+        var count = document.getElementById("count"); 
+        var bazapens = document.getElementById("bazapens"); 
+        var nadbpens = document.getElementById("nadbpens");
+        var osnovapens = document.getElementById("osnovapens"); 
+        var result = document.getElementById("result"); 
+        var avia1 = 0;                    
+        var avia1 = document.getElementById("avia").value;  
+        var baza1 = 0;
+        baza1 += parseInt(rang.options[rang.selectedIndex].value) * avia1;
+        baza1 += parseInt(tabel.options[tabel.selectedIndex].value);
+        
+        var baza2 = 0;
+        var baza2 = baza1 * document.getElementById("visluga").value;
+                           
+                    
+        var baza = 0;
+        var baza = baza1 + baza2;
+               
+        var osnova1 = baza * document.getElementById("kf").value;
+      
+        var osnova2 = osnova1 * document.getElementById("god").value;
+        
+        var osnova3 = osnova2 * document.getElementById("vihod").value;
+        
+        var izd = document.getElementById("izdivenec").value * document.getElementById("kf").value;           
+        var inva = (invalid.checked == true) ? parseInt(invalid.value) : 0;
+        var inva2 = document.getElementById("invalid13").value * document.getElementById("kf").value; 
+        
+        osnova3 += (vbd.checked == true) ? parseInt(vbd.value) : 0;
+        osnova3 += inva * document.getElementById("kf").value;
+        osnova3 += izd;
+        osnova3 += inva2;
+       
+        var osnova = parseFloat(osnova3.toFixed(2));
+
+       
+        var nadb1 = baza * document.getElementById("kf").value;
+        var nadb2 = nadb1 * document.getElementById("god").value;
+        var nadb3 = nadb2 * document.getElementById("vihod").value;
+
+        nadb3 += (vbd.checked == true) ? parseInt(vbd.value) : 0;
+        nadb3 += inva * document.getElementById("kf").value;
+        nadb3 += izd;
+        nadb3 += inva2;
+        
+        var nadb4 = nadb3 * 0.086;
+        var nadb = parseFloat(nadb4.toFixed(2));
+ 
+        var baza4 = osnova * 1.086;
+        var baza5 = parseFloat(baza4.toFixed(2));
+        
+        osnovapens.innerHTML = osnova;
+        nadbpens.innerHTML = nadb;
+        bazapens.innerHTML = baza5;     
+        }
+
+    </script>
+
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Воинская должность:</h4>
+<select class="calculator-input" id="rang" min="0" max="70">
+<option disabled selected value="0">Укажите тарифный разряд по воинской должности</option>
+<option value="11588">1 тарифный разряд(стрелок, маскировщик, дорожник)</option>
+<option value="12745">2 тарифный разряд (пулеметчик, снайпер)</option>
+<option value="13905">3 тарифный разряд (старший гранатометчик)</option>
+<option value="15064">4 тарифный разряд (командир танка)</option>
+<option value="17381">5 тарифный разряд (командир отделения)</option>
+<option value="18539">6 тарифный разряд (фельдшер)</option>
+<option value="19698">7 тарифный разряд (заместитель командира взвода)</option>
+<option value="20277">8 тарифный разряд (переводчик)</option>
+<option value="20856">9 тарифный разряд (старшина, старший техник)</option>
+<option value="23173">10 тарифный разряд (командир взвода)</option>
+<option value="23753">11 тарифный разряд (инженер в управлении батальона)</option>
+<option value="24333">12 тарифный разряд (заместитель командира роты)</option>
+<option value="24911">13 тарифный разряд (старший офицер полка)</option>
+<option value="25490">14 тарифный разряд (командир роты (батареи))</option>
+<option value="26071">15 тарифный разряд (офицер в управлении дивизии)</option>
+<option value="26649">16 тарифный разряд (заместитель командира батальона)</option>
+<option value="27228">17 тарифный разряд (начальник разведки)</option>
+<option value="27809">18 тарифный разряд (командир батальона)</option>
+<option value="28387">19 тарифный разряд (офицер в управлении армии)</option>
+<option value="28966">20 тарифный разряд (офицер в управлении командования)</option>
+<option value="29546">21 тарифный разряд (старший офицер в управлении армии)</option>
+<option value="30125">22 тарифный разряд (старший офицер в управлении командования)</option>
+<option value="30705">23 тарифный разряд (командир полка)</option>
+<option value="31284">24 тарифный разряд (начальник отделения в управлении командования)</option>
+<option value="31862">25 тарифный разряд (заместитель командира бригады)</option>
+<option value="32443">26 тарифный разряд (старший офицер ГШ)</option>
+<option value="33022">27 тарифный разряд (старший инспектор в управлении командования)</option>
+<option value="33600">28 тарифный разряд (командир бригады)</option>
+<option value="34180">29 тарифный разряд (заместитель командира дивизии)</option>
+<option value="34760">30 тарифный разряд (заместитель начальника отдела ГШ)</option>
+<option value="35338">31 тарифный разряд (командир дивизии)</option>
+<option value="35918">32 тарифный разряд (командир бригады надводных кораблей)</option>
+<option value="36498">33 тарифный разряд (начальник отдела ГШ)</option>
+<option value="37077">34 тарифный разряд (командир авиационной базы)</option>
+<option value="37656">35 тарифный разряд (командир корпуса)</option>
+<option value="38235">36 тарифный разряд (заместитель начальника УМЦ)</option>
+<option value="38815">37 тарифный разряд (заместитель командующего армией)</option>
+<option value="39394">38 тарифный разряд (заместитель начальника управления ГУ)</option>
+<option value="39973">39 тарифный разряд (командир эскадры кораблей)</option>
+<option value="40552">40 тарифный разряд (первый заместитель командующего армией)</option>
+<option value="41132">41 тарифный разряд (заместитель командующего войсками)</option>
+<option value="41711">42 тарифный разряд (начальник управления ГУ ГШ)</option>
+<option value="42290">43 тарифный разряд (заместитель начальника ВИ МО)</option>
+<option value="42870">44 тарифный разряд (командующий армией)</option>
+<option value="43449">45 тарифный разряд (начальник военного учебно-научного центра)</option>
+<option value="44028">46 тарифный разряд (заместитель главнокомандующего видом ВС)</option>
+<option value="46345">47 тарифный разряд (командующий войсками военного округа)</option>
+<option value="48663">48 тарифный разряд (Главнокомандующий видом ВС)</option>
+<option value="50979">49 тарифный разряд (заместитель МО РФ)</option>
+<option value="52139">50 тарифный разряд (первый заместитель МО РФ)</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Воинское звание:</h4>
+<select class="calculator-input" id="tabel" min="0" max="70">
+<option disabled selected value="0">Укажите воинское звание</option>
+<option value="5794">Рядовой, матрос</option>
+<option value="6373">Ефрейтор, старший матрос</option>
+<option value="6954">Младший сержант, старшина 2 статьи</option>
+<option value="7532">Сержант, старшина 1 статьи</option>
+<option value="8112">Старший сержант, главный старшина</option>
+<option value="8692">Старшина, главный карабельный старшина</option>
+<option value="9270">Прапорщик, мичман</option>
+<option value="9850">Старший прапорщик, старший мичман</option>
+<option value="11008">Младший лейтенант</option>
+<option value="11588">Лейтенант</option>
+<option value="12167">Старший лейтенант</option>
+<option value="12745">Капитан, капитан-лейтенант</option>
+<option value="13326">Майор, капитан 3 ранга</option>
+<option value="13905">Подполковник, капитан 2 ранга</option>
+<option value="15064">Полковник, капитан 1 ранга</option>
+<option value="23173">Генерал-майор, контр-адмирал</option>
+<option value="25490">Генерал-лейтенант, вице-адмирал</option>
+<option value="28966">Генерал-полковник, адмирал</option>
+<option value="31284">Генерал армии, адмирал флота</option>
+<option value="34760">Маршал РФ</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title"> Надбавка за квалификационную категорию летному составу:</h4>
+<select class="calculator-input" id="avia" min="0" max="70">
+<option value="1">Отсутствие квалификационной категории</option>
+<option value="1.15">Летчик (штурман) второго класса, летчик (штурман)</option>
+<option value="1.2">Летчик (штурман) первого класса, летчик (штурман)</option>
+<option value="1.3">Летчик (штурман)-снайпер</option>
+<option value="1.1">Бортовой специалист второго класса</option>
+<option value="1.15">Бортовой специалист первого класса</option>
+<option value="1.2">Бортовой специалист-мастер</option>   
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Выслуга лет для исчисления надбавки:</h4>
+<select class="calculator-input" id="visluga" min="0" max="70">
+<option disabled selected value="0">Укажите выслугу для исчисления надбавки за выслугу лет</option>
+<option value="0.15">от 5 до 10 лет - 15 %</option>
+<option value="0.20">от 10 до 15 лет - 20 %</option>
+<option value="0.25">от 15 до 20 лет - 25 %</option>
+<option value="0.30">от 20 до 25 лет - 30 %</option>
+<option value="0.40">от 25 лет и более - 40 %</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Общая продолжительность службы:</h4>
+<select class="calculator-input" id="god">
+<option disabled selected value="0">Укажите выслугу лет на пенсию</option>
+<option value="0.50">20 лет - 50%</option>
+<option value="0.53">21 год - 53%</option>
+<option value="0.56">22 лет - 56%</option>
+<option value="0.59">23 лет - 59%</option>
+<option value="0.62">24 лет - 62%</option>
+<option value="0.65">25 лет - 65%</option>
+<option value="0.68">26 лет - 68%</option>
+<option value="0.71">27 лет - 71%</option>
+<option value="0.74">28 лет - 74%</option>
+<option value="0.77">29 лет - 77%</option>
+<option value="0.80">30 лет - 80%</option>
+<option value="0.83">31 год - 83%</option>
+<option value="0.85">32 года и более - 85%</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title"> Год выхода на пенсию (расчет понижающего коэффициента): </h4>
+<select class="calculator-input" id="vihod">
+<option value="1.0">Без понижающего - 100%</option>
+<option value="0.7368">2021 год - 73,68%</option>
+<option value="0.74">2022 год - 74%</option>
+<option value="0.7741">c 1 октября 2022 года - 77,41%</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Районный коэффициент для назначения пенсии: </h4>
+<select class="calculator-input" id="kf">
+<option value="1.0">Нет</option>
+<option value="1.15">1.15</option>
+<option value="1.2">1.2</option>
+<option value="1.25">1.25</option>
+<option value="1.3">1.3</option>
+<option value="1.4">1.4</option>
+<option value="1.5">1.5</option>
+<option value="1.6">1.6</option>
+<option value="1.7">1.7</option>
+<option value="1.8">1.8</option>
+<option value="2.0">2.0</option>
+</select>
+</div>
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Надбавка неработающим пенсионерам, имеющим нетрудоспособных иждивенцев:</h4>
+<select class="calculator-input" id="izdivenec">
+<option value="0">Нет</option>
+<option value="1855">1 иждивенец </option>
+<option value="3710">2 иждивенца</option>
+<option value="5797">3 и более иждивенцев</option>
+</select>
+</div> 
+<div class="calculator-input-wrap">
+<h4 class="calculator-input-title">Увеличение пенсии за выслугу лет инвалидам I-III группы: </h4>
+<select class="calculator-input" id="invalid13">
+<option value="0">Нет</option>
+<option value="17390">инвалиды I гр. вследствие военной травмы</option>
+<option value="14491">инвалиды II гр. вследствие военной травмы </option>
+<option value="10144">инвалиды III гр. вследствие военной травмы </option>
+<option value="14491">инвалиды I гр., участники ВОВ, ставшие инвалидами</option>
+<option value="11593">инвалиды II гр., участники ВОВ, ставшие инвалидами</option>
+<option value="8695">инвалиды III гр., участники ВОВ, ставшие инвалидами</option>
+</select>
+</div>
+<br>
+<br>
+
+<input type="checkbox" onchange="calc()" value="1855" id="vbd"> <label for="vbd"><h6>Участник боевых действий?</h6></label>
+    <br>
+    <br>
+<input type="checkbox" onchange="calc()" value="5796.78" id="invalid"> <label for="invalid"><h6>Инвалид I гр. либо возраст 80-лет (с 01.04.2021 г. — 100 % расчетного размера пенсии (5796,78 руб.)</h6></label>
+
+
+    <br><br>
+    <h5>Базовая сумма военной пенсии:&nbsp;&nbsp; <span id="osnovapens">0</span> рублей. </h5>
+<br><br>
+
+
+    <h5>Ежемесячная доплата 8,6% до 1 октября 2022 года:&nbsp;&nbsp; <span id="nadbpens">0</span> рублей. </h5>
+<br><br>
+
+    <h5>Всего сумма военной пенсии к выплате:&nbsp;&nbsp; <span id="bazapens">0</span> рублей. </h5>
+<br><br>
+</header>
+

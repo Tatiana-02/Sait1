@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="font-size: 16px">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="Main.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com" />
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700"
+    />
+
+    <link rel="stylesheet" href="calculate.css" />
+    <script src="/menu.js"></script>
+    <base href="https://kad-reg.ru/kalkulyator.html"/>
+    <link rel="stylesheet" href="/templates/mytemplate/css/gorod.css">
+    <script src="/templates/mytemplate/libs,_jQueryFormStyler-master,_jquery.formstyler.js+libs,_fancybox,_jquery.fancybox.pack.js+libs,_scrollto,_jquery.scrollTo.min.js+js,_common.js+js,_calc.js.pagespeed.jc.l-ef627iKB.js"></script><script>eval(mod_pagespeed_jrkzPpgaXq);</script>
+    <script>eval(mod_pagespeed_Y5blIUrlVZ);</script>
+    <script>eval(mod_pagespeed_6UnkGF7HsZ);</script>
+    <script>eval(mod_pagespeed_Qn21tl_2le);</script>
+    <script>eval(mod_pagespeed_xChshVrkOM);</script>
+    <div class="calculator-input-wrap">
+        <h4 class="calculator-input-title">Тип объекта</h4>
+        <div class="input"> 
+          <select id="objecttype" onchange="calc();"> 
+            <option disabled selected value="0">Выберите тип объекта</option>
+            <option value="1">Квартира</option> 
+            <option value="2">Комната</option> 
+            <option value="3">Жилой дом</option>
+            <option value="4">Гараж/хоз.строение</option> 
+            <option value="5">Машиноместо</option>       
+            <option value="6">Коммерческая недвижимость</option> 
+            <option value="7">Недостроенный жилой дом</option> 
+            <option value="8">Земельный участок</option>      
+            <option value="9">Прочие объекты недвижимости</option>
+          </select> 
+        </div> 
+      </div> 
+<div class="calculator-input-wrap">
+    <h4 class="calculator-input-title">Кадастровая стоимость</h4>
+    <div class="input"> 
+ <input type="number" min="0" step="1" placeholder="Введите стоимость" id="kadastrprice" onchange="calc();"/>
+</div> 
+</div> 
+<div class="calculator-input-wrap">
+    <h4 class="calculator-input-title">Льготы (%)</h4>
+<div class="input"> 
+ <input type="number" placeholder="10" min="0" max="100" step="1" id="lgotaprice" onchange="calc();"/> 
+</div> 
+</div> 
+<div class="calculator-input-wrap">
+    <h4 class="calculator-input-title">Площадь (кв.)</h4>
+<div class="input"> 
+ <input type="number" placeholder="65" min="0" step="1" id="square" onchange="calc();"/> 
+</div> 
+<div class="calculator-input-wrap">
+    <h5 class="calculator-input-title">Сумма налога, руб</h5>
+<div class="input"> 
+ <strong id="price">0 </strong> 
+</div> 
+</div> 		    
+</div>
+</div>
+</div>
+<div style="display:none">
+<div id="online">
+</div>
+</div>

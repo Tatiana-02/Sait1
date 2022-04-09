@@ -1,0 +1,38 @@
+.calculator-wrap {
+  margin: 21px 74px 0;
+  display: flex;
+}
+.calculator-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 64px;
+}
+.calculator-input-wrap {
+  min-width: 64%;
+}
+.calculator-input {
+  width: 256px;
+}
+.calculate-button {
+  margin-top: 64px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.description-header {
+  float: right;
+}
+.menu {
+  margin: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.menu-button {
+  padding: 12px;
+  cursor: pointer;
+  border: 3px #808080 solid;
+  border-radius: 16px;
+  background: #d6e9fa;
+  font-weight: bold;
+}
